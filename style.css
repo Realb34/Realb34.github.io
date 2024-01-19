@@ -263,7 +263,7 @@ main hr {
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 200px) {
     #initial-name {
         font-size: 0.3rem; /* Adjusted font size for mobile devices */
         left: 5%; /* Adjust position to fit smaller screens */
