@@ -103,6 +103,20 @@ function animateProjectItem(item, index, windowHeight) {
     }
 }
 
+// Function for nav bar to change color as scroll
+function changeHeaderOnScroll() {
+    const header = document.querySelector('header');
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollPosition > 80) { // Change '50' to the scroll position you prefer
+        header.style.backgroundColor = 'rgba(0, 0, 0, 0.9)'; // Semi-opaque background
+    } else {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0)'; // Transparent background
+    }
+}
+
+
+
 // Event Listeners
 window.onload = animateInitialName;
 
@@ -110,4 +124,6 @@ window.addEventListener('scroll', () => {
     handleLineSymbolContainers();
     handleFadeInScroll();
     handleProjectItems();
+    changeHeaderOnScroll();
 });
+
