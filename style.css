@@ -247,6 +247,16 @@ main hr {
     z-index: 2000;
 }
 
+#initial-name {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 4rem; /* Adjust this as needed */
+    text-align: left;
+    z-index: 2000;
+}
+
 #initial-name .gray, #initial-name .prominent {
     display: inline-block; /* To ensure proper alignment */
     transition: opacity 0.5s ease; /* Smooth transition for opacity changes */
@@ -255,12 +265,12 @@ main hr {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     #initial-name {
-        font-size: 2rem; /* Smaller font size for mobile devices */
+        font-size: 0.3rem; /* Adjusted font size for mobile devices */
         left: 5%; /* Adjust position to fit smaller screens */
     }
 
     #initial-name .gray, #initial-name .prominent {
-        font-size: 1.5rem; /* Smaller font size for mobile devices */
+        font-size: 0.3rem; /* Adjusted font size for mobile devices */
     }
 }
 
