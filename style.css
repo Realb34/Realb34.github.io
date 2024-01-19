@@ -580,9 +580,11 @@ ul.skills-list li, .experience ul li, .education ul li {
         flex-direction: row; /* Keep the menu items in a row */
         justify-content: center; /* Center the items horizontally */
         align-items: center; /* Align items vertically */
+        padding-right: 3px;
     }
 
     .navigation-menu li {
+        font-size: 5px;
         margin-right: 0.5rem; /* Adjust spacing between items */
         margin-bottom: 0; /* Remove bottom margin */
     }
