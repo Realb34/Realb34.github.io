@@ -71,17 +71,6 @@ header {
 }
 
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .navigation-menu {
-        flex-direction: column; /* Stack the navigation items vertically */
-        align-items: center; /* Center the items */
-    }
-    .navigation-menu li {
-        margin-bottom: 0.5rem; /* Add some space between stacked items */
-    }
-}
-
 main {
     text-align: center;
     padding: 5rem 0;
@@ -570,4 +559,25 @@ ul.skills-list li, .experience ul li, .education ul li {
         font-size: 1rem; /* Smaller font size for mobile */
         left: 50%; /* Centered on the screen */
         transform: translate(-50%, -50%); /* Adjust for center alignment */
+    }
+
+    /* Adjusting the navigation menu for mobile devices */
+    @media (max-width: 768px) {
+        .navigation-menu {
+            flex-direction: row; /* Keep the menu items in a row */
+            justify-content: center; /* Center the items horizontally */
+            align-items: center; /* Align items vertically */
+        }
+
+        .navigation-menu li {
+            margin-right: 0.5rem; /* Adjust spacing between items */
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+
+        /* Additional adjustments for smaller screens */
+        @media (max-width: 480px) {
+            .navigation-menu li {
+                margin-right: 0.3rem; /* Reduce spacing further for smaller screens */
+            }
+        }
     }
