@@ -565,9 +565,9 @@ ul.skills-list li, .experience ul li, .education ul li {
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     #initial-name {
-        font-size: 2rem; /* Smaller font size for mobile */
+        font-size: 1rem; /* Smaller font size for mobile */
         left: 50%; /* Centered on the screen */
         transform: translate(-50%, -50%); /* Adjust for center alignment */
     }
