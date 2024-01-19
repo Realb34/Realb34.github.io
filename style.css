@@ -27,17 +27,24 @@ body, html {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 1rem; /* Adjusted padding */
-    position: fixed;
-    width: 85%;
-    top: 0;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #363638;
     z-index: 1000;
-    box-sizing: border-box; /* New: ensures padding is included in the width */
+    transition: background-color 2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
 }
+
 
 .branding {
     font-size: 2rem;
     font-weight: bold;
+    margin-right: 50px;
     white-space: nowrap; /* Prevents the branding from breaking into multiple lines */
 }
 
@@ -50,7 +57,6 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap; /* Allows menu items to wrap on smaller screens */
 }
 
 .navigation-menu li {
@@ -107,11 +113,20 @@ main hr {
     display: flex;
     justify-content: flex-start;
     margin: 1rem 0;
+    text-decoration: none;
 }
 
+social-icons a {
+    text-decoration: none;
+}
+
+
 .social-icons i {
+    color: gray;
     margin: 0 0.5rem;
     margin-bottom: 200px;
+    text-decoration: none;
+
 }
 
 .logos .tech-stack-title {
@@ -478,3 +493,81 @@ main hr {
 .about-section .btn:hover {
     background-color: #0056b3;
 }
+
+/* Revised Resume Section Styles */
+.resume-section {
+    padding: 2rem 0; /* Reduced vertical padding */
+    background-color: #1A202C; /* Dark background for the resume section */
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.resume-container {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.resume-section h2 {
+    font-size: 2rem; /* Smaller section title */
+    color: #FBBF24; /* Highlight color for the section title */
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+.resume-content {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.experience-section, .education-section, .skills-section {
+    margin-bottom: 1.5rem; /* Reduced margin */
+}
+
+.experience, .education {
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+.experience h4, .education h4 {
+    font-size: 1.25rem; /* Smaller title font size */
+    color: #FBBF24; /* Highlight color for titles */
+    margin-bottom: 0.3rem; /* Reduced margin */
+}
+
+.experience p.date, .education p.institution {
+    font-style: italic;
+    color: #CBD5E1; /* Light gray for dates and institutions */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+ul.skills-list, .experience ul, .education ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul.skills-list li, .experience ul li, .education ul li {
+    margin-bottom: 0.3rem; /* Reduced margin */
+    color: #CBD5E1; /* Light gray for list items */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.btn {
+    padding: 8px 16px; /* Smaller button padding */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Additional responsive styles for resume section */
+@media (max-width: 768px) {
+    .resume-container {
+        width: 90%;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    #initial-name {
+        font-size: 2rem; /* Smaller font size for mobile */
+        left: 50%; /* Centered on the screen */
+        transform: translate(-50%, -50%); /* Adjust for center alignment */
+    }
