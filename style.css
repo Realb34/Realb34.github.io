@@ -25,6 +25,8 @@ body, html {
 
 
 header {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -553,31 +555,35 @@ ul.skills-list li, .experience ul li, .education ul li {
     }
 }
 
-/* Media Query for Mobile Devices */
+/* Media Query for very small devices (max-width: 480px) */
 @media (max-width: 480px) {
     #initial-name {
-        font-size: 1rem; /* Smaller font size for mobile */
+        font-size: 1rem; /* Smaller font size for very small screens */
         left: 50%; /* Centered on the screen */
         transform: translate(-50%, -50%); /* Adjust for center alignment */
     }
 
-    /* Adjusting the navigation menu for mobile devices */
-    @media (max-width: 768px) {
-        .navigation-menu {
-            flex-direction: row; /* Keep the menu items in a row */
-            justify-content: center; /* Center the items horizontally */
-            align-items: center; /* Align items vertically */
-        }
-
-        .navigation-menu li {
-            margin-right: 0.5rem; /* Adjust spacing between items */
-            margin-bottom: 0; /* Remove bottom margin */
-        }
-
-        /* Additional adjustments for smaller screens */
-        @media (max-width: 480px) {
-            .navigation-menu li {
-                margin-right: 0.3rem; /* Reduce spacing further for smaller screens */
-            }
-        }
+    .navigation-menu li {
+        margin-right: 0.3rem; /* Reduce spacing further for smaller screens */
     }
+
+    /* Adjust header padding for smaller screens */
+    header {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+
+/* Media Query for small devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .navigation-menu {
+        flex-direction: row; /* Keep the menu items in a row */
+        justify-content: center; /* Center the items horizontally */
+        align-items: center; /* Align items vertically */
+    }
+
+    .navigation-menu li {
+        margin-right: 0.5rem; /* Adjust spacing between items */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+}
